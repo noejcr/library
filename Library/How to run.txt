@@ -1,0 +1,10 @@
+py -3 -m pip install -r requirements.txt
+py -3 manage.py makemigrations
+py -3 manage.py migrate
+py -3 manage.py collectstatic
+py -3 manage.py test
+py -3 manage.py createsuperuser
+py -3 manage.py runserver
+
+http://127.0.0.1:8000/admin/ to open the admin site
+http://127.0.0.1:8000 to open the main site
